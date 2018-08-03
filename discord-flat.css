@@ -13,6 +13,27 @@
     padding-top: 3px;
 }
 
+.wordmark-2iDDfm svg {
+    display: none;
+}
+
+.wordmark-2iDDfm {
+    position: absolute;
+    height: 10px;
+    padding: 0;
+    margin: 6px 8px 5px 8px;
+}
+
+.wordmark-2iDDfm::after {
+    content: "";
+    background-image: url('https://i.imgur.com/7kTZSK4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100px;
+    display: block;
+}
+
 /* Header */
 
 .divider-2PMBlV,
