@@ -1,1 +1,1 @@
-# An almost vanilla dicord stylesheet
+# An almost vanilla discord stylesheet
