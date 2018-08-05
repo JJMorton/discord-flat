@@ -41,104 +41,14 @@
     display: none;
 }
 
-/* Guild list */
-
-.guilds-wrapper {
-    width: 5px;
-    background-color: transparent;
-    transition: width var(--animation-length), background-color var(--animation-length);
-    position: fixed;
-    z-index: 999;
-    top: var(--title-bar-height);
-    bottom: 0;
-    margin: auto;
-    float: left;
-    overflow: visible;
-}
-
-.guilds-wrapper .guild.selected::before {
-    opacity: 0;
-    /* transition: opacity var(--animation-length) !important; */
-}
-
-.guilds-wrapper:hover .guild.selected::before {
-    opacity: 1;
-}
-
-.guilds-wrapper:hover {
-    width: var(--guild-list-width);
-    background-color: #202225;
-}
-
-.guilds-wrapper::after {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    margin-left: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity var(--animation-length);
-}
-
-.guilds-wrapper:hover::after {
-    opacity: 1;
-}
-
-.guilds-wrapper .scroller-wrap {
-    width: 100%;
-}
-
-.guilds.scroller::-webkit-scrollbar {
-    display: none;
-}
-
-.guild {
-    /* position: static !important; */
-}
-
-@keyframes ping {
-    0% {
-        background-color: red;
-    }
-    50% {
-        background-color: lightblue;
-    }
-    100% {
-        background-color: red;
-    }
-}
-
-.guilds-wrapper .guild.unread::before {
-    background-color: red !important;
-    animation: ping 1s;
-    animation-iteration-count: infinite;
-}
-
-.guild .badge {
-    position: absolute;
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 10px;
-    background-color: red;
-    color: transparent;
-    padding: 0;
-    margin: 0;
-    left: -15px;
-    top: 20px;
-    animation: ping 1s;
-    animation-iteration-count: infinite;
-}
-
 /* Channel list */
 
 .base-3dtUhz {
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 
 .name-3M0b8v {
-    font-size: 13px;
+    font-size: 13px !important;
 }
 
 .container-1UB9sr {
@@ -147,8 +57,8 @@
 
 .content-20Aix8,
 .private-channels .channel a {
-    margin: 0;
-    border-radius: 0;
+    margin: 0 !important;
+    border-radius: 0 !important;
     box-sizing: border-box;
     width: 100%;
     padding: 0 12px;
@@ -167,6 +77,10 @@
     display: none;
 }
 
+.contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM {
+    background-color: #36393f !important;
+}
+
 
 /* Avatars */
 
@@ -183,17 +97,17 @@
 }
 
 .username-1cB_5E {
-    font-size: 13px;
+    font-size: 13px!important;
 }
 
 /* Chat */
 
 .message-group h2 strong {
-    font-size: 0.9rem;
+    font-size: 0.9rem!important;
 }
 
 .message-group h2 .timestamp {
-    font-size: 0.65rem;
+    font-size: 0.65rem!important;
 }
 
 .message-group .avatar-large {
@@ -209,17 +123,17 @@
     margin-bottom: 10px;
 }
 
-.messages.scroller::-webkit-scrollbar {
+.messages-3amgkR.scroller::-webkit-scrollbar {
     width: 5px;
     border: none;
 }
 
-.messages.scroller::-webkit-scrollbar-track-piece {
+.messages-3amgkR.scroller::-webkit-scrollbar-track-piece {
     background-color: transparent !important;
     border: none;
 }
 
-.messages.scroller::-webkit-scrollbar-thumb {
+.messages-3amgkR.scroller::-webkit-scrollbar-thumb {
     margin: 0;
     right: 0;
     border: none;
@@ -227,11 +141,11 @@
 }
 
 .message-group .comment .markup {
-    font-size: 0.85rem;
+    font-size: 0.85rem!important;
 }
 
 .typing-2GQL18 {
-    bottom: var(--chat-input-height);
+    bottom: var(--chat-input-height) !important;
     padding-left: 10px;
     padding-right: 10px;
     height: 20px;
@@ -239,7 +153,7 @@
 }
 
 .typing-2GQL18 .text-1y-e8- {
-    font-size: 12px;
+    font-size: 12px!important;
     line-height: 20px;
     height: inherit;
 }
@@ -253,15 +167,20 @@
     margin-left: -20px !important;
 }
 
+.innerNoAutocomplete-1WpcVO {
+    border-radius: 0 !important;
+}
+
 /* Chat input */
 
-.chat form {
-    margin: 0;
+.chat-3bRxxu form {
+    margin: 0 !important;
     box-shadow: none !important;
 }
 
 .channelTextArea-rNsIhG {
-    margin: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     min-height: var(--chat-input-height);
 }
 
@@ -294,9 +213,9 @@
 }
 
 .emojiButton-2wRZts {
-    top: 0px;
-    bottom: 0px;
-    margin: auto;
+    top: 0px !important;
+    bottom: 0px !important;
+    margin: auto !important;
 }
 
 /* Member list */
