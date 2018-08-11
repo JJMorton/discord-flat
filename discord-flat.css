@@ -41,6 +41,10 @@
     display: none;
 }
 
+.search .search-bar {
+    border-radius: 0;
+}
+
 /* Channel list */
 
 .base-3dtUhz {
@@ -81,6 +85,10 @@
     background-color: #36393f !important;
 }
 
+.wrapper-2NJDcI {
+    border-radius: 0;
+}
+
 
 /* Avatars */
 
@@ -88,7 +96,8 @@
     display: none;
 }
 
-.small-5Os1Bb .status-2s6iDp {
+.small-5Os1Bb .status-2s6iDp,
+.avatarOffline-3GF27z::after {
     top: 0;
     bottom: 0;
     left: 0;
@@ -98,6 +107,16 @@
 
 .username-1cB_5E {
     font-size: 13px!important;
+}
+
+.avatarOffline-3GF27z::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(185,187,190,.9);
 }
 
 /* Chat */
@@ -169,6 +188,10 @@
 
 .innerNoAutocomplete-1WpcVO {
     border-radius: 0 !important;
+}
+
+.containerCozy-jafyvG .divider-32i8lo {
+    display: none;
 }
 
 /* Chat input */
