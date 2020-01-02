@@ -1,235 +1,115 @@
 :root {
-    --title-bar-height: 20px;
-    --guild-list-width: 70px;
-    --chat-input-height: 53px;
+	--title-bar-height: 20px;
+	--guild-list-width: 70px;
+	--chat-input-height: 52px;
 
-    --bg-opacity: 0.8;
+	--bg-opacity: 0.8;
 
-    --animation-length: 0.2s;
+	--animation-length: 0.2s;
 }
 
 .typeWindows-1za-n7 {
-    margin-top: 0;
-    padding-top: 3px;
+	margin-top: 0;
+	padding-top: 3px;
 }
 
-/* Header */
+/* Headers */
 
-.divider-2PMBlV,
-.topic-2QX7LI::before {
-    display: none;
+[class^='title-'] [class^='divider-'] {
+	display: none !important;
 }
 
-.search .search-bar {
-    border-radius: 0;
+[class^='search-'] {
+	border-radius: 0;
+}
+
+[class^='base-'] {
+	border-radius: 0 !important;
+}
+
+[class^='libraryHeader-'] {
+	box-shadow: var(--elevation-low);
 }
 
 /* Channel list */
 
-.base-3dtUhz {
-    border-radius: 0 !important;
+[class^='sidebar-'] [class^='containerDefault-'] [class^='content-'] {
+	margin: 0 !important;
+	padding: 0px 20px;
+	height: 100%;
+	border-radius: 0 !important;
 }
 
-.name-3M0b8v {
-    font-size: 13px !important;
+/* Friends list */
+
+[class^='privateChannels-'] button[class^='searchBarComponent-'] {
+	border-radius: 0;
 }
 
-.container-1UB9sr {
-    border: none;
+[class^='privateChannels-'] a[class^='channel-'] {
+	margin: 0;
+	min-width: 100%;
+	padding: 0;
 }
 
-.content-20Aix8,
-.private-channels .channel a {
-    margin: 0 !important;
-    border-radius: 0 !important;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 12px;
-    height: 100%;
-}
-
-.channel.btn-friends {
-    height: 42px;
-}
-
-.wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
-    margin-left: 8px;
-}
-
-.scroller-2FKFPG::-webkit-scrollbar {
-    display: none;
-}
-
-.contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM {
-    background-color: #36393f !important;
-}
-
-.wrapper-2NJDcI {
-    border-radius: 0;
-}
-
-
-/* Avatars */
-
-.small-5Os1Bb .image-33JSyf {
-    display: none;
-}
-
-.small-5Os1Bb .status-2s6iDp,
-.avatarOffline-3GF27z::after {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.username-1cB_5E {
-    font-size: 13px!important;
-}
-
-.avatarOffline-3GF27z::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    background-color: rgba(185,187,190,.9);
-}
-
-/* Chat */
-
-.message-group h2 strong {
-    font-size: 0.9rem!important;
-}
-
-.message-group h2 .timestamp {
-    font-size: 0.65rem!important;
-}
-
-.message-group .avatar-large {
-    display: none;
-}
-
-.message-group {
-    border: none;
-    padding: 10px 0 10px 0;
-}
-
-.message-group:last-child {
-    margin-bottom: 10px;
-}
-
-.messages-3amgkR.scroller::-webkit-scrollbar {
-    width: 5px;
-    border: none;
-}
-
-.messages-3amgkR.scroller::-webkit-scrollbar-track-piece {
-    background-color: transparent !important;
-    border: none;
-}
-
-.messages-3amgkR.scroller::-webkit-scrollbar-thumb {
-    margin: 0;
-    right: 0;
-    border: none;
-    border-radius: 0;
-}
-
-.message-group .comment .markup {
-    font-size: 0.85rem!important;
-}
-
-.typing-2GQL18 {
-    bottom: var(--chat-input-height) !important;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 20px;
-    box-sizing: border-box;
-}
-
-.typing-2GQL18 .text-1y-e8- {
-    font-size: 12px!important;
-    line-height: 20px;
-    height: inherit;
-}
-
-.typing-2GQL18 .ellipsis-19qdx6 {
-    height: inherit;
-    margin-top: 0;
-}
-
-.edit-message {
-    margin-left: -20px !important;
-}
-
-.innerNoAutocomplete-1WpcVO {
-    border-radius: 0 !important;
-}
-
-.containerCozy-jafyvG .divider-32i8lo {
-    display: none;
-}
-
-/* Chat input */
-
-.chat-3bRxxu form {
-    margin: 0 !important;
-    box-shadow: none !important;
-}
-
-.channelTextArea-rNsIhG {
-    margin: 0 !important;
-    padding: 0 !important;
-    min-height: var(--chat-input-height);
-}
-
-.channelTextArea-rNsIhG .inner-zqa7da {
-    min-height: inherit;
-    border-radius: 0;
-}
-
-.channelTextArea-rNsIhG .inner-zqa7da .textArea-2Spzkt {
-    height: calc(var(--chat-input-height) - 10px);
-    max-height: calc(var(--chat-input-height) - 10px);
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 18px;
-}
-
-.channelTextArea-rNsIhG .inner-zqa7da .textArea-2Spzkt::-webkit-scrollbar {
-    display: none;
-}
-
-.attachButton-1UjEWA {
-    padding: 10px 0 10px 20px;
-}
-
-.attachButtonDivider-3Glu60 {
-    background: transparent !important;
-}
-
-.emojiButton-2wRZts {
-    top: 0px !important;
-    bottom: 0px !important;
-    margin: auto !important;
+[class^='privateChannels-'] a[class^='channel-'] [class^='layout-'] {
+	border-radius: 0;
+	padding: 3px 20px;
 }
 
 /* Member list */
 
-.member-3W1lQa {
-    margin: 0;
-    border-radius: 0;
+[class^='membersWrap-'] [class^='membersGroup-'] {
+	margin-bottom: 5px !important;
 }
 
-/* Friends list */
-.channel-2QD9_O a {
-    margin: 0;
-    border-radius: 0;
-    height: 100%;
+[class^='membersWrap-'] div[class^='member-'] {
+	margin: 0 !important;
+	padding: 0 !important;
+	min-width: 100% !important;
 }
+
+[class^='membersWrap-'] div[class^='member-'] [class^='layout-'] {
+	border-radius: 0 !important;
+}
+
+[class^='membersWrap-'] [class^='avatar-'] {
+	margin: 0 !important;
+}
+
+[class^='membersWrap-'] [class^='avatar-'] svg > foreignObject {
+	display: none !important;
+}
+
+[class^='membersWrap-'] [class^='avatar-'] svg > rect {
+	x: 0 !important;
+	y: -5 !important;
+	transform: translate(5px, 50%) !important;
+}
+
+/* Message form */
+
+[class^='chatContent-'] form {
+	margin: 0;
+	border: none;
+	min-height: var(--chat-input-height);
+}
+
+[class^='chatContent-'] form [class^='channelTextArea-'],
+[class^='chatContent-'] form [class^='channelTextArea-'] [class^='scrollableContainer-'] {
+	margin: 0;
+	min-height: var(--chat-input-height);
+	border-radius: 0;
+	overflow-y: hiddden;
+}
+
+[class^='chatContent-'] form [class^='inner-'] {
+	margin-top: 4px;
+}
+
+/* Messages */
+
+[class^='messagesWrapper'] [class^='dividerEnabled-'] {
+	display: none;
+}
+
