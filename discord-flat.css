@@ -33,6 +33,10 @@
 
 /* Channel list */
 
+[class^='scroller-'] {
+	overflow-y: auto !important;
+}
+
 [class^='sidebar-'] [class^='containerDefault-'] [class^='content-'] {
 	margin: 0 !important;
 	padding: 0px 20px;
