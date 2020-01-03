@@ -77,19 +77,19 @@
 	border-radius: 0 !important;
 }
 
-[class^='membersWrap-'] [class^='avatar-'] {
-	margin: 0 !important;
-}
+/* [class^='membersWrap-'] [class^='avatar-'] { */
+/* 	margin: 0 !important; */
+/* } */
 
-[class^='membersWrap-'] [class^='avatar-'] svg > foreignObject {
-	display: none !important;
-}
+/* [class^='membersWrap-'] [class^='avatar-'] svg > foreignObject { */
+/* 	display: none !important; */
+/* } */
 
-[class^='membersWrap-'] [class^='avatar-'] svg > rect {
-	x: 0 !important;
-	y: -5 !important;
-	transform: translate(5px, 50%) !important;
-}
+/* [class^='membersWrap-'] [class^='avatar-'] svg > rect { */
+/* 	x: 0 !important; */
+/* 	y: -5 !important; */
+/* 	transform: translate(5px, 50%) !important; */
+/* } */
 
 /* Message form */
 
